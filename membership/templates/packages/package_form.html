@@ -1,0 +1,56 @@
+{% extends 'main.html' %}
+{% load widget_tweaks %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="mb-0">{% if form.instance.pk %}Edit Package{% else %}Create Package{% endif %}</h2>
+                </div>
+                <div class="card-body">
+                    <form method="POST">
+                        {% csrf_token %}
+
+                        <div class="mb-3">
+                            <label for="{{ form.name.id_for_label }}" class="form-label">{{ form.name.label }}</label>
+                            {{ form.name|add_class:"form-control" }}
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="{{ form.description.id_for_label }}" class="form-label">{{ form.description.label }}</label>
+                            {{ form.description|add_class:"form-control"|attr:"rows:4" }}
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label for="{{ form.package_type.id_for_label }}" class="form-label">{{ form.package_type.label }}</label>
+                                {{ form.package_type|add_class:"form-select" }}
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="{{ form.category.id_for_label }}" class="form-label">{{ form.category.label }}</label>
+                                {{ form.category|add_class:"form-select" }}
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="{{ form.price.id_for_label }}" class="form-label">{{ form.price.label }}</label>
+                                {{ form.price|add_class:"form-control" }}
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="{{ form.is_active.id_for_label }}" class="form-label">{{ form.is_active.label }}</label>
+                            {{ form.is_active|add_class:"form-check-input" }}
+                        </div>
+
+                        <div class="d-flex justify-content-end mt-3">
+                            <a href="{% url 'packages' %}" class="btn btn-secondary me-2">Back</a>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

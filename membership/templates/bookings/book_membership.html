@@ -1,0 +1,17 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="conatiner py-5 text-center">
+    <h1>Book Membership: {{ package.name }}</h1>
+    <p>{{ package.description }}</p>
+    <p>Type: {{ package.package_type }}</p>
+    <p>Category: {{ package.category }}</p>
+    <p>Price: Rs.{{ package.price }}</p>
+
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-primary">Confirm Booking</button>
+    </form>
+</div>
+
+{% endblock %}

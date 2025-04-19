@@ -1,0 +1,112 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+    .hero-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('{% static "images/workout.jpg" %}') no-repeat center center;
+        background-size: cover;
+        color: white;
+        padding: 150px 0;
+        margin-bottom: 50px;
+    }
+
+    .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin-bottom: 30px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+
+    .btn-hero {
+        font-size: 1.2rem;
+        padding: 15px 40px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 30px;
+    }
+
+    .card {
+        transition: all 0.3s ease;
+    }
+
+    .card:hover {
+        background-color: #007bff;
+        color: white;
+        transform: translateY(-5px);
+    }
+
+    .card:hover .card-title,
+    .card:hover .card-text,
+    .card:hover i {
+        color: white;
+    }
+
+    .card i {
+        transition: all 0.3s ease;
+    }
+
+    .card:hover i {
+        transform: scale(1.1);
+    }
+</style>
+
+<!-- Hero Section -->
+<div class="hero-section">
+    <div class="container">
+        <div class="hero-content text-center">
+            <h1 class="hero-title">Transform Your Body, Transform Your Life</h1>
+            <p class="hero-subtitle">Personalized fitness plans tailored just for you</p>
+            <a href="{% url 'recommendation' %}" class="btn btn-primary btn-lg btn-hero">Start Your Journey</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Services Section -->
+    <h2 class="text-center mb-5" style="font-size: 2.5rem; font-weight: 700;">Our Premium Services</h2>
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="card h-100 shadow mb-4">
+                <div class="card-body">
+                    <i class="fas fa-dumbbell fa-4x mb-4"></i>
+                    <h5 class="card-title" style="font-size: 1.5rem; font-weight: 600;">Custom Workouts</h5>
+                    <p class="card-text">Expertly crafted routines tailored to your fitness level and goals.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow mb-4">
+                <div class="card-body">
+                    <i class="fas fa-apple-alt fa-4x mb-4"></i>
+                    <h5 class="card-title" style="font-size: 1.5rem; font-weight: 600;">Nutrition Plans</h5>
+                    <p class="card-text">Personalized diet strategies to fuel your body and maximize results.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow mb-4">
+                <div class="card-body">
+                    <i class="fas fa-calendar-alt fa-4x mb-4"></i>
+                    <h5 class="card-title" style="font-size: 1.5rem; font-weight: 600;">Exclusive Access</h5>
+                    <p class="card-text">Premium gym memberships and packages to support your fitness journey.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

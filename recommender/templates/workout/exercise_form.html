@@ -1,0 +1,70 @@
+{% extends 'main.html' %}
+{% load widget_tweaks %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h2 class="mb-0">{% if form.instance.pk %}Edit Exercise{% else %}Add Exercise{% endif %}</h2>
+        </div>
+        <div class="card-body">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="{{ form.name.id_for_label }}" class="form-label">{{ form.name.label }}</label>
+                        {{ form.name|add_class:"form-control" }}
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="{{ form.category.id_for_label }}" class="form-label">{{ form.category.label }}</label>
+                        {{ form.category|add_class:"form-select" }}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="{{ form.target_goal.id_for_label }}" class="form-label">{{ form.target_goal.label }}</label>
+                        {{ form.target_goal|add_class:"form-select" }}
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="{{ form.sets.id_for_label }}" class="form-label">{{ form.sets.label }}</label>
+                        {{ form.sets|add_class:"form-control" }}
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="{{ form.reps.id_for_label }}" class="form-label">{{ form.reps.label }}</label>
+                        {{ form.reps|add_class:"form-control" }}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="{{ form.level.id_for_label }}" class="form-label">{{ form.level.label }}</label>
+                        {{ form.level|add_class:"form-select" }}
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="{{ form.equipment_required.id_for_label }}" class="form-label">{{ form.equipment_required.label }}</label>
+                        {{ form.equipment_required|add_class:"form-control" }}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="{{ form.image.id_for_label }}" class="form-label">{{ form.image.label }}</label>
+                        {{ form.image|add_class:"form-control" }}
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="{{ form.female_modification.id_for_label }}" class="form-label">{{ form.female_modification.label }}</label>
+                        {{ form.female_modification|add_class:"form-control"|attr:"rows:2" }}
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end mt-3">
+                    <a href="{% url 'exercise_list' %}" class="btn btn-secondary me-2">Cancel</a>
+                    <button type="submit" class="btn btn-success">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

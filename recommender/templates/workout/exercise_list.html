@@ -1,0 +1,43 @@
+<!-- workout/exercise_list.html -->
+
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="container py-5 text-center">
+    <a href="{% url 'category_list' %}" class="btn btn-primary mb-5">Add Workout Catogary</a>
+    <a href="{% url 'exercise_create' %}" class="btn btn-primary mb-5">Add Exercise</a>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Target Goal</th>
+                <th>Level</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for exercise in exercises %}
+            <tr>
+                <td>{{ exercise.id }}</td>
+                <td>{{ exercise.name }}</td>
+                <td>{{ exercise.category.name }}</td>
+                <td>{{ exercise.target_goal }}</td>
+                <td>{{ exercise.level }}</td>
+                <td>{{ exercise.sets }}</td>
+                <td>{{ exercise.reps }}</td>
+                <td>
+                    <!-- Action buttons -->
+                    <a href="{% url 'exercise_detail' exercise.id %}" class="btn btn-primary btn-sm">View</a>
+                    <a href="{% url 'exercise_update' exercise.id %}" class="btn btn-info btn-sm">Edit</a>
+                    <a href="{% url 'exercise_delete' exercise.id %}" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

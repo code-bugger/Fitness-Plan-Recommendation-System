@@ -1,0 +1,30 @@
+{% extends 'main.html' %}
+
+
+{% block content %}
+
+
+<div class="container py-5 text-center">
+    <h2>Package Details</h2>
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">{{ package.name }}</h4>
+            <p class="card-text">{{ package.description }}</p>
+            <p><strong>Type:</strong> {{ package.package_type }}</p>
+            <p><strong>Category:</strong> {{ package.category }}</p>
+            <p><strong>Price:</strong> ${{ package.price }}</p>
+        </div>
+        <div class="card-footer">
+            <a href="{% url 'package_update' package.pk %}" class="btn btn-warning">Edit</a>
+            <form action="{% url 'package_delete' package.pk %}" method="POST" style="display:inline;">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-danger"
+                    onclick="return confirm('Are you sure you want to delete this package?')">Delete</button>
+            </form>
+            <a href="{% url 'packages' %}" class="btn btn-secondary">Back to List</a>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

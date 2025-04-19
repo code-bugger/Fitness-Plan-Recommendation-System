@@ -1,0 +1,115 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div class="container py-5 text-center">
+    <h2 class="mb-4">Recommended Diet</h2>
+    <div class="row">
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="card-title mb-0">Breakfast</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        {% for food, calories, quantity in breakfast_foods %}
+                        <li class="list-group-item">
+                            <div>{{ food }}</div>
+                            <div>
+                                <span class="badge bg-secondary">{{ calories }} kcal</span>
+                                <span class="badge bg-primary rounded-pill">{{ quantity }}</span>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    Total: <strong>{{ breakfast_total }} kcal</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    <h5 class="card-title mb-0">Lunch</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        {% for food, calories, quantity in lunch_foods %}
+                        <li class="list-group-item">
+                            <div>{{ food }}</div>
+                            <div>
+                                <span class="badge bg-secondary">{{ calories }} kcal</span>
+                                <span class="badge bg-success rounded-pill">{{ quantity }}</span>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    Total: <strong>{{ lunch_total }} kcal</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <h5 class="card-title mb-0">Dinner</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        {% for food, calories, quantity in dinner_foods %}
+                        <li class="list-group-item">
+                            <div>{{ food }}</div>
+                            <div>
+                                <span class="badge bg-secondary">{{ calories }} kcal</span>
+                                <span class="badge bg-info rounded-pill">{{ quantity }}</span>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    Total: <strong>{{ dinner_total }} kcal</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert alert-info mt-3">
+        <strong>Required Daily Calories:</strong> {{ required_calories }} kcal<br>
+        <strong>Total Daily Calories:</strong> {{ total_calories }} kcal
+    </div>
+</div>
+
+<hr>
+<div class="container my-5 text-center">
+    <h2>Your Weekly Workout Plan</h2>
+    <br>
+    <div class="accordion" id="accordionExample">
+        {% for day, workout in workout_plan.items %}
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button {% if not forloop.first %}collapsed{% endif %}" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse{{ forloop.counter }}"
+                    aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}"
+                    aria-controls="collapse{{ forloop.counter }}">
+                    {{ day|title }}
+                </button>
+            </h2>
+            <div id="collapse{{ forloop.counter }}"
+                class="accordion-collapse collapse {% if forloop.first %}show{% endif %}"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>{{ workout|safe }}</strong>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+{% endblock %}

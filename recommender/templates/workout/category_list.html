@@ -1,0 +1,28 @@
+{% extends 'main.html' %}
+{% block content %}
+<div class="container py-5 text-center">
+    <a href="{% url 'category_create' %}" class="btn btn-primary mb-5">Add Category</a>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for category in categories %}
+            <tr>
+                <td>{{ category.id }}</td>
+                <td>{{ category.name }}</td>
+                <td>
+                    <a href="{% url 'category_update' category.id %}" class="btn btn-info">Edit</a>
+                    <a href="{% url 'category_delete' category.id %}" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{% url 'exercise_list' %}" class="btn btn-secondary me-2">Back to Exercise</a>
+</div>
+{% endblock %}

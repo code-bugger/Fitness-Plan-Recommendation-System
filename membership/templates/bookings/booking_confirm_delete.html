@@ -1,0 +1,17 @@
+{% extends "main.html" %}
+
+{% block content %}
+<div class="container py-5">
+    <h2>Are you sure you want to delete this booking?</h2>
+    <div class="card">
+        <div class="card-body">
+            <p>{{ booking.user.username }} - {{ booking.membership_package.name }}</p>
+            <form method="POST">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-danger">Yes, delete</button>
+                <a href="{% url 'booking_list' %}" class="btn btn-secondary">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

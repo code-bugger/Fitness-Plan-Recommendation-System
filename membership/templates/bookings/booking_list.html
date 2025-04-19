@@ -1,0 +1,61 @@
+{% extends "main.html" %}
+
+{% block content %}
+<div class="container py-5 text-center">
+    <!-- Filter form -->
+    <form method="GET" id="filterForm" class="mb-4">
+        <div class="form-group row justify-content-center">
+            <label for="status" class="col-sm-2 col-form-label">Filter by Status:</label>
+            <div class="col-sm-4">
+                <select name="status" id="status" class="form-control" onchange="submitForm()">
+                    <option value="">All</option>
+                    <option value="Pending" {% if request.GET.status == "Pending" %}selected{% endif %}>Pending</option>
+                    <option value="Active" {% if request.GET.status == "Active" %}selected{% endif %}>Active</option>
+                    <option value="Expired" {% if request.GET.status == "Expired" %}selected{% endif %}>Expired</option>
+                    <option value="Cancelled" {% if request.GET.status == "Cancelled" %}selected{% endif %}>Cancelled</option>
+                </select>
+            </div>
+        </div>
+    </form>
+
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>User</th>
+                <th>Package</th>
+                <th>Status</th>
+                <th>Booked At</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for booking in bookings %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ booking.user.username }}</td>
+                    <td>{{ booking.membership_package.name }}</td>
+                    <td>{{ booking.status }}</td>
+                    <td>{{ booking.booked_at }}</td>
+                    <td>
+                        <a href="{% url 'booking_detail' booking.pk %}" class="btn btn-info btn-sm">View</a>
+                        <a href="{% url 'booking_update' booking.pk %}" class="btn btn-warning btn-sm">Edit</a>
+                        <a href="{% url 'booking_delete' booking.pk %}" class="btn btn-danger btn-sm">Delete</a>
+                    </td>
+                </tr>
+            {% empty %}
+                <tr>
+                    <td colspan="6" class="text-center">No bookings available.</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<script>
+    // JavaScript to auto-submit the form when a dropdown option is selected
+    function submitForm() {
+        document.getElementById('filterForm').submit();
+    }
+</script>
+{% endblock %}

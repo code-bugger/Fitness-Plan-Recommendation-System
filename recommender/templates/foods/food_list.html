@@ -1,0 +1,56 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="py-5 text-center">
+    <a href="{% url 'food_create' %}" class="btn btn-primary mb-4">Add New FoodItem</a>
+
+    <table id="foodTable" class="table table-bordered table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th style="width: 5%;">Item</th>
+                <th>Calories</th>
+                <th>Fats</th>
+                <th>Proteins</th>
+                <th>Carbohydrates</th>
+                <th>Sugars</th>
+                <th>Type</th>
+                <th>Quantity</th>
+                <th>Meals</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for food in foods %}
+            <tr>
+                <td>{{ food.item }}</td>
+                <td>{{ food.calories }}</td>
+                <td>{{ food.fats }}</td>
+                <td>{{ food.proteins }}</td>
+                <td>{{ food.carbohydrates }}</td>
+                <td>{{ food.sugars }}</td>
+                <td>{{ food.get_veg_nonveg_display }}</td>
+                <td>{{ food.quantity }}</td>
+                <td>
+                    {% if food.breakfast %} Breakfast {% endif %}
+                    {% if food.lunch %} Lunch {% endif %}
+                    {% if food.dinner %} Dinner {% endif %}
+                </td>
+                <td>
+                    <a href="{% url 'food_edit' food.pk %}" class="btn btn-sm btn-warning">Edit</a>
+                    <a href="{% url 'food_delete' food.pk %}" class="btn btn-sm btn-danger">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<!-- Initialize DataTables -->
+<script>
+    $(document).ready(function() {
+        $('#foodTable').DataTable();
+    });
+</script>
+
+
+{% endblock %}

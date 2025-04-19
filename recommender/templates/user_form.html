@@ -1,0 +1,81 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="mb-0">Fitness Plan Form</h2>
+                </div>
+                <div class="card-body">
+                    <form method="POST">
+                        {% csrf_token %}
+                        
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <label for="age" class="form-label">Age</label>
+                                <input type="number" class="form-control" id="age" name="age" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="weight" class="form-label">Weight (kg)</label>
+                                <input type="number" class="form-control" id="weight" name="weight" required>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <label for="height" class="form-label">Height (cm)</label>
+                                <input type="number" class="form-control" id="height" name="height" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="gender" class="form-label">Gender</label>
+                                <select class="form-select" id="gender" name="gender" required>
+                                    <option value="" selected disabled>Select gender</option>
+                                    <option value="Male" selected>Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="veg_nonveg" class="form-label">Diet Preference</label>
+                            <select id="veg_nonveg" class="form-select" name="veg_nonveg" required>
+                                <option value="" selected disabled>Select diet preference</option>
+                                <option value="0">Vegetarian</option>
+                                <option value="1" selected>Non-Vegetarian</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="activity" class="form-label">Activity Level</label>
+                            <select id="activity" class="form-select" name="activity" required>
+                                <option value="" selected disabled>Select activity level</option>
+                                <option value="1.2">Sedentary</option>
+                                <option value="1.375">Light</option>
+                                <option value="1.55" selected>Moderate</option>
+                                <option value="1.725">Very Active</option>
+                                <option value="1.9">Super Active</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="goal" class="form-label">Goal</label>
+                            <select id="goal" class="form-select" name="goal" required>
+                                <option value="" selected disabled>Select your goal</option>
+                                <option value="Lose">Weight Loss</option>
+                                <option value="Maintain" selected>Maintain Healthy Weight</option>
+                                <option value="Gain">Weight Gain</option>
+                            </select>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg px-5">Get Your Plan</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

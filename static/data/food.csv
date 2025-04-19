@@ -1,0 +1,252 @@
+id,item,breakfast,lunch,dinner,veg/nonveg,calories,fats,proteins,carbohydrates,sugars,quantity
+1,Asparagus Cooked,0,1,1,0,22,0.2,2.4,4.1,1.3,100g
+2,Avocados,1,0,0,0,160,15,2,8.5,0.7,1 piece
+3,Bananas,1,0,0,0,89,0.3,1.1,23,12,1 piece
+4,Bagels made in wheat,0,1,1,0,250,1.5,10,49,6.1,1 piece
+5,Berries,1,0,0,0,349,0.4,14,77,46,100g
+6,Brocolli,0,1,1,0,25,0.5,3.8,3.1,0.6,100g
+7,Brown Rice,0,1,1,0,362,2.7,7.5,76,0,1 cup
+8,Cauliflower,0,1,1,0,32,0.3,3,6.3,0,100g
+9,American cheese,1,0,0,0,331,24,20,8.3,0,100g
+10,Coffee,1,0,0,0,2,0,0.3,0.2,0,1 cup
+11,Corn,1,1,1,0,97,1.4,3.3,22,7.7,100g
+12,Dark chocolates,0,0,1,0,556,32,5.5,60,48,100g
+13,Grapes,1,0,0,0,93,2.1,5.6,17,6.3,1 cup
+14,Milk,1,0,1,0,97,6.9,3.8,5.2,0,1 cup
+15,Cashew Nuts,1,0,0,0,553,44,18,30,5.9,100g
+16,Onions,0,1,1,0,40,0.1,1.1,9.3,4.2,100g
+17,Orange,1,0,0,0,97,0.2,1.5,25,0,1 piece
+18,Pasta canned with tomato sauce,0,1,1,0,71,0.7,2.2,14,4,100g
+19,Pears,1,0,0,0,57,0.1,0.4,15,9.8,1 piece
+20,Peas,0,1,1,0,81,0.4,5.4,14,5.7,100g
+21,Pumpkin,0,1,1,0,18,0.1,0.7,4.3,2.1,100g
+22,Tuna Salad,0,1,1,1,187,9.3,16,9.4,0,100g
+23,Tuna Fish,0,0,1,1,184,6.3,30,0,0,100g
+24,Peproni Pizza,0,0,1,0,298,14,12,30,3.2,1 slice
+25,Cheese Pizza,0,0,1,0,276,11,11,33,2.5,1 slice
+26,French Fries,0,1,1,0,289,14,3.5,37,0.3,100g
+27,Chicken Burger,0,1,1,1,292,15,18,20,0,1 burger
+28,Cheese Burger,0,1,1,0,256,12,13,25,0,1 burger
+29,Chicken Sandwich,0,1,1,1,257,12,15,23,5,1 sandwich
+30,Sugar Doughnuts,0,1,1,0,426,23,5.2,51,32,1 piece
+31,Chocolate Doughnuts,0,1,1,0,452,25,4.9,51,27,1 piece
+32,Pop Corn - Caramel,1,0,1,0,381,1.4,2,90,65,1 cup
+33,Pop Corn,1,0,1,0,429,9.5,13,73,0.5,1 cup
+34,Dosa,1,1,1,0,168,3.7,4.5,29,0.1,1 piece
+35,Idli,1,1,1,0,156,1.7,5,30.2,0.74,2 pieces
+36,Poha,1,0,0,0,130,1.5,2.6,26.9,0.5,1 cup
+37,Chappati,0,1,1,0,297,7.5,11,46,2.7,1 piece
+38,Tomato,1,1,1,0,16,0.2,1.2,3.2,2.63,1 piece
+39,Yogurt,1,1,1,0,60,4,3.1,7,7,1 cup
+40,Brownie,1,0,0,0,407,6.2,4.4,84,55,1 piece
+41,Noodles,0,1,1,0,108,0.2,1.8,24,0,1 cup
+42,Bhaji Pav,1,0,0,0,151,2.4,9,29.3,1.35,1 plate
+43,Dal Makhani,0,1,1,0,109,8.5,2.1,6.3,3.29,1 cup
+44,Almonds,1,0,0,0,579,50,21,22,4.4,100g
+45,Mushrooms,1,1,1,0,22,0.3,3.1,3.3,2,100g
+46,Egg Yolk cooked,1,0,0,1,196,15,14,0.8,0.4,2 yolks
+47,Sweet Potatoes cooked,1,1,0,0,76,0.1,1.4,18,5.7,100g
+48,Boiled Potatoes,1,1,1,0,87,0.1,1.9,20,0.9,100g
+49,White Rice,0,1,1,0,360,0.6,6.6,79,0,1 cup
+50,Orange juice,1,0,0,0,45,0.2,0.7,10,8.4,1 cup
+51,Greek yogurt plain,1,1,1,0,73,1.9,10,3.9,3.6,1 cup
+52,Oat Bran Cooked,1,0,0,0,40,0.9,3.2,11,0,1 cup
+53,Chia seeds,1,0,0,0,486,31,17,42,0,100g
+54,Cottage cheese with vegetables,0,1,1,0,95,4.2,11,3,0.4,100g
+55,Salmon,0,1,1,1,127,4.4,21,0,0,100g
+56,Cereals-Corn Flakes,1,0,0,0,384,0.9,5.9,88,7.8,1 cup
+57,Beans,0,1,1,0,31,0.2,1.8,7,3.3,100g
+58,Lentils,0,1,1,0,101,0.5,8.8,21,0,1 cup
+59,Pasta with corn homemade,0,1,1,0,126,0.7,2.6,28,0,1 cup
+60,Tea,1,0,0,0,1,0,0,0.2,0,1 cup
+61,Apples,1,0,0,0,52,0.2,0.3,14,10,1 piece
+62,Strawberries,1,0,0,0,32,0.3,0.7,7.7,4.9,100g
+63,Quninoa,1,1,0,0,120,1.9,4.4,21,0.9,1 cup
+64,Goat meat,0,1,1,1,109,2.3,21,57,0,100g
+65,Rabbit meat,0,1,1,1,114,2.3,22,0,0,100g
+66,Chicken Strips,0,0,1,1,295,15,19,22,0.3,100g
+67,Steak Fries,0,1,1,1,255,13,3.3,31,0.9,100g
+68,Mexican Rice,0,1,1,0,195,4.9,3.6,34,1.4,1 cup
+69,Fried Shrimp,0,0,1,1,319,20,14,21,0.8,100g
+70,Spaghetti and meatballs,0,0,1,1,170,8.5,7.8,16,2,1 plate
+71,Pork cooked,0,0,1,1,297,21,26,0,0,100g
+72,Bacon cooked,0,0,1,1,146,2.8,28,1.8,1.2,2 slices
+73,Nachos,1,1,1,0,350,22,4.3,35,2.2,1 plate
+74,Chicken Popcorn,0,1,1,1,351,22,18,21,0,100g
+75,Turkey cooked,0,1,1,1,203,10,27,0,0,100g
+76,Oyster cooked,0,1,1,1,159,4,29,0,0,100g
+77,Beef sticks,1,0,0,1,550,50,22,5.4,0,100g
+78,Banana Chips,1,0,0,0,519,34,2.3,58,35,100g
+79,Honey,1,0,1,0,304,0,0.3,82,82,1 tbsp
+80,Chocolate Icecream,0,0,1,0,216,11,3.8,28,25,1 cup
+81,Vanilla Ice cream,0,0,1,0,207,11,3.5,24,21,1 cup
+82,Strawberry Icecream,0,0,1,0,192,8.4,3.2,28,0,1 cup
+83,Marshmallows,0,0,1,0,318,0.2,1.8,81,58,10 pieces
+84,Chocolate milk,1,0,0,0,535,30,7.7,59,52,1 cup
+85,Rice Pudding,0,0,1,0,376,0.1,2.7,91,0,1 cup
+86,Guava,1,0,0,0,68,0.6,2.6,14.3,8.9,1 piece
+87,Pomegranate,1,0,0,0,83,1.2,1.7,18.7,13.7,1 piece
+88,Kiwi,1,0,0,0,42,0.5,0.9,9.8,6.4,1 piece
+89,Cherries,1,0,0,0,63,0.2,1,16,12,10 pieces
+90,Oranges,1,0,0,0,47,0.1,0.9,11.8,9.4,1 piece
+91,Peanuts,1,0,0,0,567,49,25,16,4.6,1/4 cup
+92,Walnuts,1,0,0,0,654,65,15,14,2.6,1/4 cup
+93,Bread,1,1,1,0,79,0.9,2.8,14,1.2,1 slice
+94,Toast,1,0,0,0,79,0.9,2.8,14,1.2,1 slice
+95,Buckwheat Bread,1,1,1,0,92,1.1,3.5,15,1.5,1 slice
+96,Boiled Rice,0,1,1,0,160,0.3,2.9,35.2,0,1 cup
+97,Dal (Lentil Soup),0,1,1,0,127,3.3,9.1,19.5,0.5,1 cup
+98,Potato Curry,0,1,1,0,136,3.2,2.9,23,1.4,1 cup
+99,Cabbage Curry,0,1,1,0,78,2.1,2.3,12,3.8,1 cup
+100,Brinjal Curry,0,1,1,0,92,0.8,2.1,15,5.7,1 cup
+101,Beans Curry,0,1,1,0,72,1.4,4.3,10,2.1,1 cup
+102,Bitter Gourd Curry,0,1,1,0,45,0.7,0.8,8,1.6,1 cup
+103,Green Bean Curry,0,1,1,0,31,0.1,1.4,7,1.5,1 cup
+104,Bottle Gourd Curry,0,1,1,0,28,0.1,0.6,6,2.4,1 cup
+105,Bamboo Shoots Curry,0,1,1,0,27,0.2,2.1,5,1.8,1 cup
+106,Cauliflower Curry,0,1,1,0,52,0.4,2.5,6,1.9,1 cup
+107,Luffa Gourd Curry,0,1,1,0,42,0.3,0.8,8,3.1,1 cup
+108,Mushroom Curry,0,1,1,0,35,0.4,3.1,4,2.7,1 cup
+109,Pumpkin Curry,0,1,1,0,67,1.1,2.1,10,4.5,1 cup
+110,String Beans Curry,0,1,1,0,40,0.1,1.6,7,2.3,1 cup
+111,Gram or Chickpeas Curry,0,1,1,0,175,4.5,9,27,3.6,1 cup
+112,Jackfruit Curry,0,1,1,0,94,0.3,1.4,21,9.8,1 cup
+113,Pointed Gourd Curry,0,1,1,0,36,0.4,1,6,1.9,1 cup
+114,Soybean Curry,0,1,1,0,172,9.3,18.6,10,2.4,1 cup
+115,Radish Greens Saag,0,1,1,0,42,0.6,3.2,7,2.2,1 cup
+116,Edible Fern Shoots Saag,0,1,1,0,32,0.3,2.7,5,1.4,1 cup
+117,Leaf Mustard Saag,0,1,1,0,27,0.3,2.5,4,1.1,1 cup
+118,Indian Rape Saag,0,1,1,0,24,0.2,2.3,3,0.8,1 cup
+119,Tossa Jute Saag,0,1,1,0,43,0.5,3.1,8,2.6,1 cup
+120,Fenugreek leaves Saag,0,1,1,0,29,0.4,2.8,4,1.3,1 cup
+121,Pea Vine Shoots Saag,0,1,1,0,35,0.3,2.9,6,2.1,1 cup
+122,Cauliflower Greens Saag,0,1,1,0,38,0.4,3,5,1.7,1 cup
+123,Spinach Saag,0,1,1,0,23,0.4,2.9,3,0.9,1 cup
+124,Mustard Greens Saag,0,1,1,0,36,0.8,2.7,5,1.5,1 cup
+125,Garden Cress Saag,0,1,1,0,25,0.3,2.1,3,0.8,1 cup
+126,Fresh Coriander Saag,0,1,1,0,23,0.4,2.2,3,0.6,1 cup
+127,Green Onions Saag,0,1,1,0,32,0.4,1.8,5,1.2,1 cup
+128,Methi ko Saag,0,1,1,0,33,0.6,3.2,4,1.4,1 cup
+129,Chamsoor ko Saag,0,1,1,0,28,0.5,2.8,3,1.1,1 cup
+130,Paalungo (Spinach with Garden Cress),0,1,1,0,28,0.5,2.6,4,1.1,1 cup
+131,Raayo ko Saag (Leaf Mustard),0,1,1,0,30,0.6,3,4,1.3,1 cup
+132,Keraau ko Muntaa ko Saag (Pea Vine Shoots),0,1,1,0,37,0.4,3.1,6,2.2,1 cup
+133,Tilapia Fish,0,1,1,1,128,3.8,26,0,0,100g
+134,Chicken Curry,0,1,1,1,209,10,18,0,0,100g
+135,Mutton Curry,0,1,1,1,295,20,25,0,0,100g
+136,Paneer Curry,0,1,1,0,266,21,18,5,3,1 cup
+137,Achar (Pickles),0,1,1,0,35,1.5,1,6,2,2 tbsp
+138,Curd/Yogurt,1,1,1,0,59,3.3,4,4,4,1 cup
+139,Butter Milk,1,1,1,0,43,2.2,3,4,3,1 cup
+140,Panipuri/Golgappa,1,0,0,0,123,7,2,17,1,5 pieces
+141,Momos,0,1,1,1,148,5,12,16,0,3 pieces
+142,Lapsi,0,0,1,0,343,15,3,55,34,1 cup
+143,Sel Roti,1,1,1,0,410,12,8,73,13,2 pieces
+144,Gundruk Soup,0,1,1,0,32,0.5,1.5,5,0,1 cup
+145,Chiura (Beaten Rice),1,0,0,0,377,6,7,77,1,1 cup
+146,Sadheko (Spicy Potato Salad),0,1,1,0,143,6,3,21,1,1 cup
+147,Sisnoo (Stinging Nettle) Saag,0,1,1,0,34,0.4,3,5,1.2,1 cup
+148,Niharu (Cockscomb) Saag,0,1,1,0,28,0.3,2.7,4,0.9,1 cup
+149,Kukhura ko Masu (Chicken Curry),0,0,1,1,209,10,18,0,0,100g
+150,Boka ko Masu (Goat Meat Curry),0,0,1,1,280,18,23,0,0,100g
+151,Macha ko Masu (Fish Curry),0,0,1,1,157,7,27,0,0,100g
+152,Gheu (Ghee),0,1,1,0,902,100,0,0,0,1 tbsp
+153,Mishri (Rock Candy),1,0,1,0,370,0,0,92,92,2 tbsp
+154,Dudh Pati (Milk & Jaggery),1,0,1,0,169,1,2,35,35,1 cup
+155,Lauka (Bottle Gourd) Curry,0,1,1,0,36,0.4,1,7,4,1 cup
+156,Simey ko Saag (Cowpea Leaves Curry),0,1,1,0,41,0.7,3.5,6,1.6,1 cup
+157,Jimbu (Hyacinth Bean) Curry,0,1,1,0,82,2,4,13,2,1 cup
+158,Mula ko Saag (Radish Greens Curry),0,1,1,0,38,0.5,2.9,6,2,1 cup
+159,Naumukhe (Mustard Greens) Saag,0,1,1,0,32,0.7,2.5,4,1.2,1 cup
+160,Phando (Chickpea Fritters),1,1,1,0,157,7,7,20,1,3 pieces
+161,Dhido (Corn Porridge),1,0,0,0,127,1,3,26,0,1 cup
+162,Gundruk Chatpate (Spicy Gundruk),0,1,1,0,53,1.5,2,10,1,1/2 cup
+163,Sinki (Fermented Radish) Curry,0,1,1,0,41,0.6,2.7,7,2,1 cup
+164,Attaro (Fermented Soybean) Curry,0,1,1,0,198,12,15,12,1,1 cup
+165,Kachila (Raw Fish Salad),0,1,0,1,118,4,18,2,1,1 cup
+166,Choila (Spicy Grilled Meat),0,1,1,1,254,16,27,0,0,100g
+167,Piro Achar (Spicy Pickles),0,1,1,0,42,2,1,7,3,2 tbsp
+168,Dhau (Yogurt Drink),1,1,1,0,59,3,3,7,7,1 cup
+169,Tongba (Fermented Millet Drink),1,0,1,0,103,0.5,3,22,0,1 cup
+170,Thune Khursani (Spicy Chili Paste),0,1,1,0,24,0.3,1,5,1,1 tbsp
+171,Phando ko Achaar (Chickpea Fritters Pickle),0,1,1,0,82,4,3,11,1,2 tbsp
+172,Lakhamari (Steamed Rice Cake),1,1,1,0,248,2,4,50,1,1 piece
+173,Chatamari (Nepali Pancake),1,0,0,0,182,11,4,23,1,1 piece
+174,Aloo Dum (Spicy Potato Curry),0,1,1,0,157,7,3,23,2,1 cup
+175,Ghyaptey (Fried Bread),1,1,1,0,442,22,9,60,2,1 piece
+176,Khichadi (Mixed Lentils and Rice),0,1,1,0,193,4,8,31,0,1 cup
+177,Kachila ko Makai (Corn Salad),0,1,0,0,125,5,4,20,3,1 cup
+178,Dahi ko Achar (Yogurt Pickle),0,1,1,0,49,3,2,5,3,2 tbsp
+179,Malpuwa (Sweet Pancake),1,0,1,0,315,17,5,38,16,2 pieces
+180,Latte,1,0,0,0,194,6,10,27,21,1 cup
+181,Kheer (Rice Pudding),0,0,1,0,223,6,4,40,27,1 cup
+182,Juju Dhau (Curd with Honey),1,1,1,0,114,3,5,17,16,1 cup
+183,Gundruk Dhido (Gundruk Porridge),1,0,0,0,135,3,5,22,1,1 cup
+184,Kinema (Fermented Soybean),0,1,1,0,206,13,17,10,1,1/2 cup
+185,Bhakta (Roasted Soybean),1,0,0,0,445,20,40,30,1,1/4 cup
+186,Chatamari (Nepali Pancake with Meat),0,1,1,1,247,13,10,23,1,1 piece
+187,Samosa,0,1,1,0,218,11,4,27,1,1 piece
+188,Wai Wai (Instant Noodles),0,1,1,0,372,16,7,53,2,1 packet
+189,Gundruk ko Jhol (Gundruk Soup),0,1,1,0,47,1,2,7,1,1 cup
+190,Sukuti (Dried Meat),0,1,1,1,279,13,53,0,0,50g
+191,Chow Mein,0,1,1,0,311,12,9,45,3,1 plate
+192,Sinki ko Dhido (Fermented Radish Porridge),1,0,0,0,153,5,7,23,2,1 cup
+193,Jhol Momo (Steamed Dumplings in Soup),0,1,1,1,173,6,13,18,1,3 pieces
+194,Sekuwa (Grilled Meat),0,1,1,1,322,18,32,0,0,100g
+195,Sael Roti (Festive Flat Bread),1,1,1,0,498,16,12,83,4,2 pieces
+196,Dhindo (Cornmeal Porridge),1,0,0,0,145,1,4,29,0,1 cup
+197,Sukuti ko Achar (Dried Meat Pickle),0,1,1,1,203,11,38,4,1,2 tbsp
+198,Achar Bhat (Rice with Pickle),0,1,1,0,323,14,7,52,2,1 plate
+199,Datchi (Dried Cheese Snack),1,0,0,0,391,21,27,32,2,1/4 cup
+200,Kachila ko Dhido (Raw Fish Salad Porridge),0,1,0,1,163,6,12,21,1,1 cup
+201,Sisnoo ko Achaar (Stinging Nettle Pickle),0,1,1,0,57,3,2,9,1,2 tbsp
+202,Khaja (Fried Snack),1,0,0,0,482,24,7,63,3,2 pieces
+203,Sel Roti Masu (Sel Roti with Meat Curry),0,1,1,1,427,14,13,67,2,2 pieces
+204,Bhutun (Fermented Soybean Salad),0,1,0,0,159,8,13,10,1,1 cup
+205,Bhatmas ko Dhido (Soybean Porridge),1,0,0,0,188,7,13,26,1,1 cup
+206,Sim ko Achar (Soybean Pickle),0,1,1,0,92,7,6,5,2,2 tbsp
+207,Lapsi Churpi (Dried Cheese Snack),1,0,0,0,378,20,25,30,2,1/4 cup
+208,Woh (Roasted Chickpeas),1,0,0,0,164,6,9,20,2,1/4 cup
+209,Sandheko (Spiced Roasted Veggies),0,1,1,0,78,3,2,12,3,1 cup
+210,Bara (Lentil Fritters),1,1,1,0,283,12,11,36,0,2 pieces
+211,Jeri (Roasted Rice Flour Snack),1,0,0,0,401,11,7,75,2,1/2 cup
+212,Chatpate (Spicy Snack Mix),1,0,0,0,387,18,11,48,3,1 cup
+213,Kachila ko Sel Roti (Spicy Sel Roti),0,1,1,0,453,15,10,79,2,2 pieces
+214,Dhido ko Sel Roti (Cornmeal Sel Roti),0,1,1,0,423,13,8,73,1,2 pieces
+215,Latte ko Sel Roti (Milk Sel Roti),1,1,1,0,468,14,9,77,3,2 pieces
+216,Jeri ko Sel Roti (Roasted Rice Sel Roti),1,1,1,0,455,12,8,79,2,2 pieces
+217,Chatamari ko Sel Roti (Nepali Pancake Sel Roti),0,1,1,0,469,15,10,77,1,2 pieces
+218,Piro Woh (Spicy Roasted Chickpeas),1,0,0,0,187,7,10,22,2,1/4 cup
+219,Gundruk ko Dhido (Gundruk Porridge),1,0,0,0,145,4,6,24,1,1 cup
+220,Tongba ko Dhido (Fermented Millet Porridge),1,0,0,0,163,2,6,32,0,1 cup
+221,Kinema ko Bhutun (Fermented Soybean Salad),0,1,0,0,187,10,15,11,1,1 cup
+222,Gundruk ko Chatpate (Spicy Gundruk),0,1,1,0,65,2,3,12,1,1/2 cup
+223,Tungryung (Fermented Soybean Curd),0,1,1,0,193,11,16,11,1,1/2 cup
+224,Sel Roti Bhaji (Sel Roti with Vegetable Curry),0,1,1,0,403,13,8,68,3,2 pieces
+225,Kinema ko Dhido (Fermented Soybean Porridge),1,0,0,0,191,7,13,27,1,1 cup
+226,Sim ko Dhido (Soybean Porridge),1,0,0,0,182,7,12,26,1,1 cup
+227,Toasted Bread,1,0,0,0,150,2,6,28,3,2 slices
+228,Cereal with Milk,1,0,0,0,257,5,9,42,13,1 cup
+229,Egg Omelet,1,1,1,1,154,11,13,1,0.5,1 omelet
+230,Chicken Gravy,0,1,1,1,235,14,24,6,2,1 cup
+231,Mutton Gravy,0,1,1,1,294,21,24,3,1,1 cup
+232,Fish Curry,0,1,1,1,180,8,22,6,2,1 cup
+233,Chicken Biryani,0,1,1,1,400,16,30,40,2,1 plate
+234,Veg Biryani,0,1,1,0,350,12,8,55,3,1 plate
+235,Mutton Biryani,0,1,1,1,430,20,32,38,2,1 plate
+236,Chicken Roast,0,1,1,1,250,12,35,0,0,100g
+237,Roti (Flatbread),0,1,1,0,240,2,8,44,1,2 pieces
+238,Dal Bhat,0,1,1,0,450,7,20,80,3,1 plate
+239,Momo (Vegetable),0,1,1,0,300,8,10,45,2,5 pieces
+240,Momo (Chicken),0,1,1,1,350,12,20,40,2,5 pieces
+241,Kwati (Mixed Bean Soup),0,1,1,0,180,3,12,30,4,1 bowl
+242,Aloo Tama,0,1,1,0,150,5,4,25,2,1 cup
+243,Dhido,1,1,1,0,200,2,6,40,0,1 cup
+244,Gundruk Ko Achar,0,1,1,0,50,1,2,10,1,2 tbsp
+245,Sisnu Ko Saag,0,1,1,0,60,1,4,10,1,1 cup
+246,Tongba,0,0,1,0,120,0,1,25,2,1 cup
+247,Yomari,0,0,1,0,280,6,5,50,15,2 pieces
+248,Samay Baji,0,1,1,0,400,15,15,55,3,1 plate
+249,Thukpa,0,1,1,0,300,8,15,40,2,1 bowl
+250,Curd,0,1,1,0,98,4.4,3.5,3.6,3.6,1/2 cup
+251,"Salad (Radish,Carrot, Cucumber)",0,1,1,0,25,0.2,1,5.8,3.2,1 cup

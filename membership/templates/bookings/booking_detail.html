@@ -1,0 +1,19 @@
+{% extends "main.html" %}
+
+{% block content %}
+<div class="container py-5 text-center">
+    <h2>Booking Details</h2>
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">{{ booking.user.username }} - {{ booking.membership_package.name }}</h4>
+            <p><strong>Status:</strong> {{ booking.status }}</p>
+            <p><strong>Booked At:</strong> {{ booking.booked_at }}</p>
+        </div>
+        <div class="card-footer">
+            <a href="{% url 'booking_update' booking.pk %}" class="btn btn-warning">Edit</a>
+            
+            <a href="{% url 'booking_list' %}" class="btn btn-secondary">Back to List</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
